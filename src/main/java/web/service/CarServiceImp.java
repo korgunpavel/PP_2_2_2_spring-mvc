@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class CarServiceImp implements CarService {
 
-    public List<Car> cars = new ArrayList<>();
+    private final List<Car> cars = new ArrayList<>();
 
     {
         cars.add(new Car("Nissan Silvia", "White", 1994));
